@@ -74,6 +74,38 @@ Evaluated models on:
 * Selected the best-performing model based on evaluation metrics.
 
 ---
+📊 Power BI Dashboard
+🔸 Objective
+
+To provide interactive business insights on delinquency trends, customer profiles, and key influencing factors.
+
+🔸 Steps
+
+Imported the cleaned dataset (cleaned_data.csv) into Power BI.
+
+Created data relationships and data model.
+
+Designed interactive visuals using slicers, KPIs, and charts.
+
+🔸 Dashboard Features
+
+✅ Loan Delinquency by Age, Gender, and Income
+✅ Default Rate by Region or Loan Type
+✅ Correlation between Credit Score & Default
+✅ Total Customers, Defaults, and Active Loans KPIs
+✅ Filter by Loan Type, Status, or Demographics
+
+🔸 Sample Charts
+
+Bar Chart: Default Rate by Loan Type
+
+Pie Chart: Distribution by Customer Segment
+
+Line Chart: Monthly Trend of Delinquency
+
+KPI Cards: Total Customers, Defaults, Active Loans
+
+
 
 ## 🧩 Technologies Used
 
