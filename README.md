@@ -9,7 +9,19 @@ This project aims to **predict loan delinquency** (i.e., whether a customer will
 The goal is to build a predictive model that helps financial institutions identify **high-risk borrowers** early and take preventive actions.
 
 ---
+## Problem Statement
 
+Credit card delinquency is a major problem for banks and financial institutions. When customers miss or delay their payments, it leads to financial losses and increases risk for the lender.
+
+The earlier a bank can spot a customer who is likely to miss payments, the better it can manage that risk — whether by sending reminders, adjusting credit limits, or offering repayment plans.
+
+This project uses **Machine Learning** to predict which customers are at risk of becoming delinquent, based on their income, credit score, payment history, and other financial details.
+
+To support this, a **Power BI dashboard** was built to give a clear visual picture of the data — showing which locations have more delinquent customers, how payment behavior changes month by month, which credit card types carry more risk, and how income and age affect delinquency. This makes it easy for business teams and analysts to explore the data, spot patterns quickly, and make informed decisions — without needing to write any code.
+
+Together, the machine learning model and the dashboard help institutions **identify risk early and act on it effectively**.
+
+---
 ##  Dashboard Preview
 
 <img width="1195" height="727" alt="image" src="https://github.com/user-attachments/assets/5840dc45-6a24-4fd2-ab3a-47922265e385" />
