@@ -2,7 +2,7 @@ A complete end-to-end data analysis and machine learning project to identify and
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 This project aims to **predict loan delinquency** (i.e., whether a customer will default or delay payments) using **Machine Learning techniques**. The pipeline covers every major step of a data science workflow — from raw data to model evaluation.
 
@@ -10,14 +10,30 @@ The goal is to build a predictive model that helps financial institutions identi
 
 ---
 
-## 📊 Dashboard Preview
+##  Dashboard Preview
 
 <img width="1196" height="730" alt="Screenshot 2026-05-01 150808" src="https://github.com/user-attachments/assets/db322a73-dfb6-45e7-bb2b-885684d195bf" />
 
 
+##  Power BI Dashboard
+
+### 🔸 Objective
+To provide interactive business insights on delinquency trends, customer profiles, and key influencing factors.
+
+### 🔸 Steps
+- Imported the cleaned dataset (`cleaned_data.csv`) into Power BI.
+- Created data relationships and data model.
+- Designed interactive visuals using slicers, KPIs, and charts.
+
+### 🔸 Dashboard Features
+- ✅ Loan Delinquency by Age and Income
+- ✅ Month-wise payment status and location-wise delinquency status
+- ✅ KPIs — Total Customers, Average Income, Average Loan Balance, Average Missed Payments
+- ✅ Filters by Employment Status, Income Category, and Month
+
 ---
 
-## 🚀 Project Pipeline
+##  Project Pipeline
 
 ### 1️⃣ Load the Dataset
 - Imported the dataset using **pandas**.
@@ -67,25 +83,9 @@ Evaluated models on:
 
 ---
 
-## 📊 Power BI Dashboard
-
-### 🔸 Objective
-To provide interactive business insights on delinquency trends, customer profiles, and key influencing factors.
-
-### 🔸 Steps
-- Imported the cleaned dataset (`cleaned_data.csv`) into Power BI.
-- Created data relationships and data model.
-- Designed interactive visuals using slicers, KPIs, and charts.
-
-### 🔸 Dashboard Features
-- ✅ Loan Delinquency by Age and Income
-- ✅ Month-wise payment status and location-wise delinquency status
-- ✅ KPIs — Total Customers, Average Income, Average Loan Balance, Average Missed Payments
-- ✅ Filters by Employment Status, Income Category, and Month
-
 ---
 
-## 🎯 Target Variable
+##  Target Variable
 
 | Value | Meaning |
 |---|---|
@@ -96,7 +96,7 @@ To provide interactive business insights on delinquency trends, customer profile
 
 ---
 
-## 📈 Model Results
+##  Model Results
 
 | Model | Accuracy | ROC-AUC | Class 1 F1 |
 |---|---|---|---|
@@ -106,7 +106,7 @@ To provide interactive business insights on delinquency trends, customer profile
 
 ---
 
-## 🧩 Technologies Used
+##  Technologies Used
 
 | Category | Tools / Libraries |
 |---|---|
@@ -121,69 +121,53 @@ To provide interactive business insights on delinquency trends, customer profile
 
 ---
 
-## 🚀 Getting Started
+##  Key Insights
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/delinquency-analysis.git
-cd delinquency-analysis
-
-# 2. Install dependencies
-pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn xgboost
-
-# 3. Open the notebook
-jupyter notebook notebooks/delinquency_analysis.ipynb
-```
-
----
-
-## 🔍 Key Insights
-
-### 📌 Customer & Delinquency Overview
+###  Customer & Delinquency Overview
 - Total **500 customers** analyzed across 6 months of payment data.
 - **80 customers (16%)** are delinquent; **420 customers (84%)** are in good standing.
 - The dataset is significantly **imbalanced**, requiring SMOTE / oversampling before model training.
 
-### 📌 Missing Payments
+###  Missing Payments
 - Most customers missed **2 to 4 payments** — the highest frequency bucket.
 - Very few customers missed only **1 payment**, suggesting that delinquency tends to escalate quickly once it begins.
 
-### 📌 Employment Status
+###  Employment Status
 - **Unemployed customers** form the largest group in the dataset.
 - Unemployment is a strong indicator of financial stress and correlates with higher delinquency risk.
 
-### 📌 Credit Card Type
+###  Credit Card Type
 - **Gold** is the most popular card type (118 customers); **Platinum** is the least common (76 customers).
 - Business card holders have the **highest delinquency count (23)** among all card types.
 - Standard card holders have the **lowest delinquency count (11)**.
 
-### 📌 Location
+###  Location
 - Credit cards are distributed fairly across all 5 cities — Los Angeles, Chicago, Phoenix, Houston, New York.
 - **New York** has slightly fewer cardholders and the **lowest delinquency count (11)**.
 - **Los Angeles** has the highest delinquency count **(21)** among all cities.
 
-### 📌 Age Group
+###  Age Group
 - The **26–50 age group** represents the largest segment **(43%)**.
 - The **51–75 age group** follows closely **(41.6%)**.
 - The **0–25 age group** makes up only **15%** of customers.
 
-### 📌 Debt-to-Income Ratio by Income Segment
+###  Debt-to-Income Ratio by Income Segment
 - **Low income** segment carries the highest Debt-to-Income ratio **(0.32)**.
 - **High income** segment is at **0.30** and **Medium income** at **0.29** — relatively balanced.
 - Low-income customers face greater repayment burden relative to earnings.
 
-### 📌 Monthly Payment Trends
+###  Monthly Payment Trends
 - **Late payment ratio is consistently high** across all 6 months — indicating a systemic pattern, not a one-off event.
 - Month_1 breakdown: Late (159), Missed (164), On-time (177) — nearly one-third of customers were already late or missed in the very first month.
 
-### 📌 Model Insights
+###  Model Insights
 - All three models (Logistic Regression, Random Forest, XGBoost) struggled to detect **class 1 (delinquent)** cases, with F1-scores near 0 for that class.
 - ROC-AUC scores (~0.35–0.38) are close to random, suggesting the current feature set and dataset size (500 rows) are insufficient for robust prediction.
 - A **larger dataset and deeper feature engineering** are needed to improve minority class detection.
 
 ---
 
-## 📊 Results
+##  Results
 
 - Achieved **high accuracy and recall** on the test set.
 - Balanced data improved the model's ability to detect delinquent cases.
@@ -191,7 +175,7 @@ jupyter notebook notebooks/delinquency_analysis.ipynb
 
 ---
 
-## 💡 Future Enhancements
+##  Future Enhancements
 
 - Hyperparameter tuning using **GridSearchCV** or **Optuna**.
 - Deploy model using **Flask / Streamlit** for real-time prediction.
@@ -199,17 +183,14 @@ jupyter notebook notebooks/delinquency_analysis.ipynb
 
 ---
 
-## 📄 License
 
-This project is for educational purposes. Feel free to fork and build on it.
----
 
-## 🧑‍💻 Author
+##  Author
 
 **Karina Goswami**
-📍 Data Analyst | Data Science Enthusiast | Machine Learning Learner
-📧 [goswamikarina01@gmail.com]
-🔗 [www.linkedin.com/in/karina-goswami-0323bb321)
+ - Data Analyst | Data Science Enthusiast | Machine Learning Learner
+ - [goswamikarina01@gmail.com]
+ - [www.linkedin.com/in/karina-goswami-0323bb321)
 
 ---
 
